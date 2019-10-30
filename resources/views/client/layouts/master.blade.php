@@ -376,8 +376,8 @@
                 class="traveltour-copyright-text traveltour-item-pdlr">
                 Copyright
                 2020
-                <a href="https://www.facebook.com/Linhungtraveldanang/"
-                   target="blank">Linh Ứng Travel</a>,
+                <a href="https://web3xu.io/"
+                   target="blank">WEB3XU</a>,
                 Bản quyền đã được bảo hộ
             </div>
         </div>

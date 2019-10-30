@@ -98,6 +98,14 @@ Route::group(['prefix'=>'/admin',  'middleware' => 'auth'],function(){
     Route::get('/config', 'Admin\WebConfigController@getAll');
     Route::post('/config/update', 'Admin\WebConfigController@update');
 
+//    Serice
+    Route::get('/service', 'Admin\ServiceController@index');
+    Route::get('/service/add', 'Admin\ServiceController@addView');
+    Route::post('/service/addRequest','Admin\ServiceController@addRequest');
+    Route::get('/service/detail/{service_id}', 'Admin\ServiceController@detail');
+    Route::get('/service/delete/{service_id}', 'Admin\ServiceController@delete');
+
+
 
 
 

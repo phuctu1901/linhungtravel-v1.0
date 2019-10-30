@@ -118,7 +118,7 @@
                                              style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
                                             <div
                                                 class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img
+                                                <a href="/dich-vu/{{$service->slug}}"><img
                                                         src="{{$service->thumb}}"></a></div>
                                             <div
                                                 class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js"
@@ -194,6 +194,19 @@
         .tourmaster-tour-rating {
             visibility: hidden;
         }
+    </style>
+
+    <style>
+        .tourmaster-tour-thumbnail.tourmaster-media-image.tourmaster-zoom-on-hover{
+            width: 400px;
+            height: 230px;
+        }
+
+        .tourmaster-tour-item-column-4 .tourmaster-tour-grid.tourmaster-price-right-title .tourmaster-tour-title{
+            padding-right: 0px;
+        }
+
+
     </style>
 
 @endsection

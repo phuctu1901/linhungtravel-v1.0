@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82db3e80-4063-49fa-9fe3-ffa2940724e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/linhungtravel-dev-01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/car/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/car/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/service/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/service/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/service/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/service/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Phúc Tú Nguyễn &lt;phuctu1901@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/unisharp/laravel-filemanager" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/mohammad-fouladgar/eloquent-builder" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/spatie/flysystem-dropbox" />
+      <path value="$PROJECT_DIR$/vendor/spatie/dropbox-api" />
+      <path value="$PROJECT_DIR$/vendor/ckfinder/ckfinder-laravel-package" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/windwalker/structure" />
+      <path value="$PROJECT_DIR$/vendor/windwalker/renderer" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/documentarian" />
+      <path value="$PROJECT_DIR$/vendor/mpociot/laravel-apidoc-generator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/vendor/mnapoli/silly" />
+      <path value="$PROJECT_DIR$/vendor/mnapoli/front-yaml" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1OirtfH73juFB5NbHPt5AbiKbzn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/service" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Desktop\linhungtravel-v1.0\resources\views\admin\service" />
+      <recent name="F:\Desktop\linhungtravel-v1.0\app\Http\Controllers\Admin" />
+      <recent name="F:\Desktop\linhungtravel-v1.0\resources\views\admin\user" />
+      <recent name="F:\Desktop\linhungtravel-v1.0\app" />
+      <recent name="F:\Desktop\linhungtravel-v1.0\public\client\new-level\css\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\learn-laravel-basic\linhungtravel-dev-01\app" />
+      <recent name="D:\dev\learn-laravel-basic\linhungtravel-dev-01\resources\views\client\tour-detail" />
+      <recent name="D:\dev\learn-laravel-basic\linhungtravel-dev-01\resources\views\client\tour-list" />
+      <recent name="D:\dev\learn-laravel-basic\linhungtravel-dev-01\resources\views\client\home" />
+      <recent name="D:\dev\learn-laravel-basic\linhungtravel-dev-01\app\Http\Controllers\Client" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.TourListController.php">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TourListController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/Http/Controllers/Client/TourListController.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.TourListController.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82db3e80-4063-49fa-9fe3-ffa2940724e2" name="Default Changelist" comment="" />
+      <created>1553821281170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553821281170</updated>
+      <workItem from="1553821282441" duration="7656000" />
+      <workItem from="1553837582233" duration="2072000" />
+      <workItem from="1553842115785" duration="19000" />
+      <workItem from="1553843261024" duration="5000" />
+      <workItem from="1553843484966" duration="31000" />
+      <workItem from="1553849977009" duration="19026000" />
+      <workItem from="1553936893864" duration="7568000" />
+      <workItem from="1553958683409" duration="17663000" />
+      <workItem from="1554001999977" duration="10375000" />
+      <workItem from="1554099974066" duration="18183000" />
+      <workItem from="1554341668976" duration="4946000" />
+      <workItem from="1554347484903" duration="824000" />
+      <workItem from="1554430280136" duration="8000" />
+      <workItem from="1554430437592" duration="14000" />
+      <workItem from="1554443922448" duration="4770000" />
+      <workItem from="1555662033815" duration="29000" />
+      <workItem from="1555662117229" duration="599000" />
+      <workItem from="1555676957206" duration="955000" />
+      <workItem from="1555726666298" duration="698000" />
+      <workItem from="1555911892798" duration="7884000" />
+      <workItem from="1555940754082" duration="4281000" />
+      <workItem from="1555979595521" duration="12212000" />
+      <workItem from="1556038023682" duration="4251000" />
+      <workItem from="1556066103352" duration="3367000" />
+      <workItem from="1556070715336" duration="1035000" />
+      <workItem from="1556086531713" duration="4431000" />
+      <workItem from="1556123116579" duration="7568000" />
+      <workItem from="1556153158205" duration="7595000" />
+      <workItem from="1556164582030" duration="19724000" />
+      <workItem from="1556265527497" duration="963000" />
+      <workItem from="1556358295136" duration="599000" />
+      <workItem from="1556406857589" duration="33419000" />
+      <workItem from="1556496067557" duration="4521000" />
+      <workItem from="1556500636674" duration="7313000" />
+      <workItem from="1556530895214" duration="3592000" />
+      <workItem from="1556762296595" duration="1683000" />
+      <workItem from="1556848208616" duration="626000" />
+      <workItem from="1556937584535" duration="3365000" />
+      <workItem from="1556971793241" duration="21345000" />
+      <workItem from="1557015604120" duration="11963000" />
+      <workItem from="1557122304799" duration="15123000" />
+      <workItem from="1557190299265" duration="4935000" />
+      <workItem from="1557545571541" duration="599000" />
+      <workItem from="1557737571811" duration="1865000" />
+      <workItem from="1557793939266" duration="76000" />
+      <workItem from="1557796712355" duration="2914000" />
+      <workItem from="1558337487787" duration="1056000" />
+      <workItem from="1558488388040" duration="504000" />
+      <workItem from="1558521578411" duration="2411000" />
+      <workItem from="1558535841186" duration="616000" />
+      <workItem from="1558543668618" duration="1695000" />
+      <workItem from="1558789327157" duration="119000" />
+      <workItem from="1558790142336" duration="2665000" />
+      <workItem from="1558829358047" duration="834000" />
+      <workItem from="1559096821956" duration="37000" />
+      <workItem from="1559211071406" duration="585000" />
+      <workItem from="1559291440761" duration="4267000" />
+      <workItem from="1559297001038" duration="739000" />
+      <workItem from="1559298917289" duration="520000" />
+      <workItem from="1562665483490" duration="265000" />
+      <workItem from="1564470549707" duration="486000" />
+      <workItem from="1564471481642" duration="434000" />
+      <workItem from="1564472057756" duration="88000" />
+      <workItem from="1564472305691" duration="5945000" />
+      <workItem from="1564642401589" duration="787000" />
+      <workItem from="1564643229690" duration="348000" />
+      <workItem from="1565108898199" duration="3279000" />
+      <workItem from="1565159875634" duration="12085000" />
+      <workItem from="1565188423223" duration="4062000" />
+      <workItem from="1566182781095" duration="1919000" />
+      <workItem from="1566271292403" duration="233000" />
+      <workItem from="1566288984515" duration="2639000" />
+      <workItem from="1566457418761" duration="1198000" />
+      <workItem from="1566480789949" duration="1257000" />
+      <workItem from="1566693789158" duration="212000" />
+      <workItem from="1566694054955" duration="3622000" />
+      <workItem from="1566791102287" duration="116000" />
+      <workItem from="1566805041189" duration="4504000" />
+      <workItem from="1566833566655" duration="3096000" />
+      <workItem from="1566867762583" duration="7224000" />
+      <workItem from="1566913227383" duration="1844000" />
+      <workItem from="1566918725288" duration="960000" />
+      <workItem from="1567413058770" duration="614000" />
+      <workItem from="1567430379215" duration="1540000" />
+      <workItem from="1568019421571" duration="1221000" />
+      <workItem from="1568164043806" duration="612000" />
+      <workItem from="1570431044169" duration="643000" />
+      <workItem from="1570498757680" duration="1233000" />
+      <workItem from="1570931530209" duration="136000" />
+      <workItem from="1570931791515" duration="2173000" />
+      <workItem from="1571128575573" duration="169000" />
+      <workItem from="1571817589904" duration="1545000" />
+      <workItem from="1571845483918" duration="1717000" />
+      <workItem from="1571847292754" duration="457000" />
+      <workItem from="1571847951079" duration="2747000" />
+      <workItem from="1571875619800" duration="10515000" />
+      <workItem from="1572077902264" duration="6352000" />
+      <workItem from="1572258818325" duration="1334000" />
+      <workItem from="1572317107239" duration="7268000" />
+      <workItem from="1572403452982" duration="5839000" />
+      <workItem from="1572423583555" duration="6351000" />
+    </task>
+    <task id="LOCAL-00001" summary="&quot;Tạm ổn phần đăng nhập&quot;">
+      <created>1553967745311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553967745311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;Sửa phần hiển thị giá giống với Saigontourist&quot;">
+      <created>1554443973213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554443973213</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;Commit 19-04-2019 trước khi sửa tiếp&quot;">
+      <created>1555677213181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555677213182</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;Sửa phần loại tour&quot;">
+      <created>1555922888904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555922888904</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Hỗ trợ duyệt ảnh từ Laravel File Manager ở phần ảnh hiển thị">
+      <created>1556004715131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556004715132</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Hoàn thiện giai đoạn 1 phần thêm tour">
+      <created>1556042212963</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556042212963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tự động cập nhật hiển thị hình ảnh khi thêm mới hình ảnh vào">
+      <created>1556068937586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556068937586</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Sửa phần hiển thị ảnh ở thêm tour/chi tiết tour">
+      <created>1556093898122</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556093898123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edit tour: sửa phần edit hình ảnh">
+      <created>1556127571955</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556127571955</updated>
+    </task>
+    <task id="LOCAL-00010" summary="tạm ổn phần sửa tour">
+      <created>1556131387404</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556131387404</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Xong phần admin/tour_category">
+      <created>1556186707228</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556186707228</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Client-&gt; Lấy ds menu tour từ database">
+      <created>1556190622344</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556190622344</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Sửa tỷ lệ khi hiển thị thumb">
+      <created>1556451269142</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556451269142</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Sửa menu - header có slide">
+      <created>1556467696929</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556467696930</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Hiện thị phần home khá ổn">
+      <created>1556506176313</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556506176334</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Sửa content marketing">
+      <created>1556507352800</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556507352800</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Admin trang tĩnh, bài viết, danh mục bài viết.">
+      <created>1556996756758</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556996756758</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Sửa xong phần dịch vụ, bài viết">
+      <created>1557194448640</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1557194448640</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Sửa lại cái ngu người của mình">
+      <created>1566480826549</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566480826549</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Sửa lại layout của danh sách blog, sửa lại layout của detail blog bằng giao diện từ trang https://colorlib.com/wp/template/bounty/">
+      <created>1566897147072</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1566897147072</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Chỉnh sửa trang admin gần hoàn thiện">
+      <created>1572408439157</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1572408439157</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myShow1" value="true" />
+    <option name="myLimit" value="432000000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="50" />
+    <MESSAGE value="&quot;Tạm ổn phần đăng nhập&quot;" />
+    <MESSAGE value="&quot;Sửa phần hiển thị giá giống với Saigontourist&quot;" />
+    <MESSAGE value="&quot;Commit 19-04-2019 trước khi sửa tiếp&quot;" />
+    <MESSAGE value="&quot;Sửa phần loại tour&quot;" />
+    <MESSAGE value="Hỗ trợ duyệt ảnh từ Laravel File Manager ở phần ảnh hiển thị" />
+    <MESSAGE value="Hoàn thiện giai đoạn 1 phần thêm tour" />
+    <MESSAGE value="Tự động cập nhật hiển thị hình ảnh khi thêm mới hình ảnh vào" />
+    <MESSAGE value="Sửa phần hiển thị ảnh ở thêm tour/chi tiết tour" />
+    <MESSAGE value="Edit tour: sửa phần edit hình ảnh" />
+    <MESSAGE value="tạm ổn phần sửa tour" />
+    <MESSAGE value="Xong phần admin/tour_category" />
+    <MESSAGE value="Client-&gt; Lấy ds menu tour từ database" />
+    <MESSAGE value="Sửa tỷ lệ khi hiển thị thumb" />
+    <MESSAGE value="Sửa menu - header có slide" />
+    <MESSAGE value="Hiện thị phần home khá ổn" />
+    <MESSAGE value="Sửa content marketing" />
+    <MESSAGE value="Admin trang tĩnh, bài viết, danh mục bài viết." />
+    <MESSAGE value="Sửa xong phần dịch vụ, bài viết" />
+    <MESSAGE value="Sửa lại cái ngu người của mình" />
+    <MESSAGE value="Sửa lại layout của danh sách blog, sửa lại layout của detail blog bằng giao diện từ trang https://colorlib.com/wp/template/bounty/" />
+    <MESSAGE value="Chỉnh sửa trang admin gần hoàn thiện" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chỉnh sửa trang admin gần hoàn thiện" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/client/tour-detail/multiday.blade.php</url>
+          <line>412</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/client/destination/index.blade.php</url>
+          <line>168</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/client/car/index.blade.php</url>
+          <line>41</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -13,7 +13,8 @@ class Service extends Model
     protected $table='services';
     protected $primaryKey = 'id'; // or null
     public $incrementing = true;
-    protected $fillable = ['servicetype_id','title', 'giagoc','giasaukhigiam', 'thumb','isPr','isActive','slug'];
+    public  $timestamps = false;
+    protected $fillable = ['servicetype_id','title', 'giagoc','giasaukhigiam', 'thumb','isPr','isActive','slug', 'content'];
 
     /**
      * Return the sluggable configuration array for this model.

@@ -113,7 +113,7 @@
                                         <div class="gdlr-core-title-item-title-wrap">
                                             <h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
                                                 style="font-size: 38px ;font-weight: 400 ;letter-spacing: 2px ;color: #193555 ;">
-                                                Vé cáp treo Bà Nà<span
+                                                {{$service->title}}<span
                                                     class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
                                             </h3>
                                         </div>
@@ -132,8 +132,8 @@
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space"
                                          style="padding-bottom: 15px ;">
                                         <div class="tourmaster-tour-thumbnail tourmaster-media-image "><a
-                                                href="https://demo.goodlayers.com/traveltour/tour/dubai-all-stunning-places/"><img
-                                                    src="https://divui.com/content/images/thumbs/0008937_thue-xe-da-nang-di-ba-na.jpeg"
+                                                href=""><img
+                                                    src="{{$service->thumb}}"
                                                     alt="" width="1280" height="580"></a></div>
                                     </div>
                                 </div>
@@ -148,19 +148,15 @@
                             <div
                                 class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
                                 <div class="summary entry-summary">
-                                    <h1>Chi tiết sản phẩm</h1>
+                                    <h3>Giá: </h3>
                                     <div class="service-price">
-                                        <div class="origin-price">1.200.00 vnđ</div>
-                                        <div class="discount-price">1.000.00 vnđ</div>
+                                        <div class="origin-price">Giá thị trường: <?php echo number_format($service->giagoc, 0, ',', '.');?> vnđ</div>
+                                        <div class="discount-price">Giá bán: <?php echo number_format($service->giasaukhigiam, 0, ',', '.');?> vnđ</div>
                                     </div>
+
+                                    <h3>Thông tin chi tiết:</h3>
                                     <div class="woocommerce-product-details__short-description">
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-                                            vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-                                            venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Duis
-                                            mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                                            odio sem nec elit. Donec sed odio dui. Donec ullamcorper nulla non metus
-                                            auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget
-                                            quam.</p>
+                                        <?php echo htmlspecialchars_decode(json_decode($service->content))?>
                                     </div>
 
                                     <style>
@@ -188,220 +184,6 @@
             </div>
         </div>
         <!-- Blogs -->
-        <div class="gdlr-core-pbf-wrapper "
-             style="padding: 95px 0px 50px 0px;">
-            <div class="gdlr-core-pbf-background-wrap">
-                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(https://demo.goodlayers.com/traveltour/hiking/wp-content/uploads/2019/04/testimonial-bg-1.jpg) ;background-repeat: repeat-x ;background-position: bottom center ;" data-parallax-speed="0">
-                </div>
-            </div>
-            <div
-                class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
-                <div
-                    class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                    <div
-                        class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first">
-                        <div
-                            class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
-                            <div
-                                class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                <div
-                                    class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr"
-                                        style="padding-bottom: 15px ;">
-                                        <div
-                                            class="gdlr-core-title-item-title-wrap">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
-                                                style="font-size: 28px ;font-weight: 700 ;letter-spacing: 3px ;color: #193555 ;">
-                                               Dịch vụ liên quan<span
-                                                    class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align"
-                                        style="margin-bottom: 50px ;">
-                                        <div class="gdlr-core-divider-container"
-                                             style="max-width: 45px ;">
-                                            <div class="gdlr-core-divider-line gdlr-core-skin-divider"
-                                                 style="border-color: #ffa019 ;border-width: 4px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="gdlr-core-pbf-column gdlr-core-column-30">
-                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js "
-                             style="padding: 20px 0px 0px 0px;">
-                            <div
-                                class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                <div
-                                    class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-right-align">
-                                        <a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border"
-                                           href="/traveltour/hiking/shop"
-                                           style="font-size: 17px ;font-weight: 600 ;color: #193555 ;padding: 0px 0px 0px 0px;text-transform: none ;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span
-                                                class="gdlr-core-content">Tất cả dịch vụ</span><i
-                                                class="gdlr-core-pos-right fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="gdlr-core-pbf-element">
-                        <div
-                            class="woocommerce gdlr-core-product-item gdlr-core-item-pdb clearfix  gdlr-core-product-style-grid gdlr-core-item-pdlr">
-                            <div
-                                class="gdlr-core-flexslider flexslider gdlr-core-js-2">
-                                <div class="flex-viewport"
-                                     style="overflow: hidden; position: relative;">
-                                    <ul
-                                        class="owl-carousel recent-blogs">
-                                        <li class="gdlr-core-item-mglr owl-item"
-                                            style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                            data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="gdlr-core-item-mglr owl-item"
-                                            style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                            data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>  <li class="gdlr-core-item-mglr owl-item"
-                                                   style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                                   data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>  <li class="gdlr-core-item-mglr owl-item"
-                                                   style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                                   data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>  <li class="gdlr-core-item-mglr owl-item"
-                                                   style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                                   data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>  <li class="gdlr-core-item-mglr owl-item"
-                                                   style="width: 290px; margin-right: 40px; float: left; display: block;"
-                                                   data-thumb-alt="">
-                                            <div class="tourmaster-tour-grid-inner" style="box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -moz-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); -webkit-box-shadow: 0px 0px 25px rgba(10, 10, 10,0.08); ">
-                                                <div class="tourmaster-tour-thumbnail tourmaster-media-image tourmaster-zoom-on-hover">
-                                                    <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/"><img src="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg" srcset="https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-400x222.jpg 400w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-600x333.jpg 600w, https://cdn.goodlayers.com/traveltour/hiking/wp-content/uploads/2018/07/aaron-benson-200753-unsplash-900x500.jpg 900w" sizes="(max-width: 767px) 100vw, 25vw" alt="" width="900" height="500"></a></div>
-                                                <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js" data-sync-height="tour-item-22" style="height: 150px; padding-bottom: 8px;">
-                                                    <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element" style="color: #ffffff;background-color: #ffa11a;">
-                                                        <div class="tourmaster-thumbnail-ribbon-cornor" style="border-right-color: rgba(255, 161, 26, 0.5);"></div>
-                                                        Vé thăm quan
-                                                    </div>
-                                                    <h3 class="tourmaster-tour-title gdlr-core-skin-title" style="font-size: 20px;font-weight: 700;letter-spacing: 0px;text-transform: none;">
-                                                        <a href="https://demo.goodlayers.com/traveltour/hiking/tour/tour-du-mont-blanc-express/">
-                                                            Vé cáp treo Bà Nà</a></h3>
-                                                    <div class="service-price">
-                                                        <div class="origin-price">1.200.00 vnđ</div>
-                                                        <div class="discount-price">1.000.00 vnđ</div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 @endsection
 @section('script-content')
@@ -426,6 +208,12 @@
 
 @section("custom-style-content")
     <style>
+
+        .tourmaster-media-image img{
+            width: 760px;
+            height: 380px;
+            overflow: hidden;
+        }
         .tourmaster-tour-rating {
             visibility: hidden;
         }

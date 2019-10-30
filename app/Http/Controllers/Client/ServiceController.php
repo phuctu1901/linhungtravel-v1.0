@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
 use App\Service;
+use App\ServiceType;
 use App\TourCategory;
 use App\TourType;
 use Illuminate\Http\Request;
@@ -22,13 +23,15 @@ class ServiceController extends Controller
         return view('client.service.index',['services' => $services]);
     }
 
-    public  function  detail(){
+    public  function  detail($servie_slug){
+            $service = Service::Where('slug',$servie_slug )->firstOrFail();
+
 //        $tours = new TourResource(Tour::all());
 //        $tourtype = TourType::all();
 //        $tours = Tour::Where('isActive',1)->paginate(6,['id', 'title', 'location', 'rate' , 'days','nights', 'thumb', 'adult_price', 'slug']);
 //        $tours = json_encode($tours);
 //        return $tours;
-        return view('client.service.detail');
+        return view('client.service.detail', ['service'=>$service]);
     }
 
     public function getServiceBySlug($tour_cat_slug){

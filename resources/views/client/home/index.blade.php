@@ -169,7 +169,7 @@
                                     <div
                                         class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                         <a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border"
-                                           href="#"
+                                           href="/gioi-thieu"
                                            style="font-size: 17px ;font-weight: 600 ;color: #193555 ;padding-left: 0px;"><span
                                                 class="gdlr-core-content">Tìm hiểu thêm</span><i
                                                 class="gdlr-core-pos-right fa fa-long-arrow-right"></i></a></div>
@@ -183,7 +183,7 @@
                              data-sync-height="height1">
                             <div class="gdlr-core-pbf-background-wrap">
                                 <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
-                                     style="background-image: url(https://demo.goodlayers.com/traveltour/hiking/wp-content/uploads/2019/03/mountain-bg-2-2.jpg) ;background-repeat: no-repeat ;background-position: center left ;"
+                                     style   ="background-image: url(https://demo.goodlayers.com/traveltour/hiking/wp-content/uploads/2019/03/mountain-bg-2-2.jpg) ;background-repeat: no-repeat ;background-position: center left ;"
                                      data-parallax-speed="0"></div>
                             </div>
                             <div

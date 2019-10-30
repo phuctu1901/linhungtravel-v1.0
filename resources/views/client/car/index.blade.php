@@ -88,103 +88,6 @@
         </div>
     </div>
     <div class="main-content">
-        <div class="gdlr-core-pbf-background-wrap"></div>
-        <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;">
-            <div class="gdlr-core-pbf-background-wrap">
-                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
-                     style="background-image: url(https://demo.goodlayers.com/traveltour/hiking/wp-content/uploads/2019/03/mountain-bg-1.jpg) ;background-repeat: no-repeat ;background-position: center left ;"
-                     data-parallax-speed="0"></div>
-            </div>
-            <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
-                <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                    <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first">
-                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js "
-                             style="padding: 100px 0px 50px; height: 721px;" data-sync-height="height1">
-                            <div
-                                class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
-                                <div class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-left-align">
-                                        <div
-                                            class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle"
-                                            style="border-width: 0px;"><img
-                                                src="/client/new-level/images/thumb/car.png"
-                                                alt="" title="binoculars" width="45" height="45"></div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
-                                        style="padding-bottom: 20px ;">
-                                        <div class="gdlr-core-title-item-title-wrap">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
-                                                style="font-size: 38px ;font-weight: 400 ;letter-spacing: 2px ;color: #193555 ;">
-                                                Dịch vụ xe và xe tự lái<span
-                                                    class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align">
-                                        <div class="gdlr-core-divider-container" style="max-width: 46px ;">
-                                            <div class="gdlr-core-divider-line gdlr-core-skin-divider"
-                                                 style="border-color: #ffa019 ;border-width: 4px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space"
-                                        style="padding-bottom: 15px ;">
-                                        <div class="gdlr-core-text-box-item-content"
-                                             style="font-size: 17px ;font-weight: 400 ;text-transform: none ;color: #687d8e ;">
-                                            <p>Linh Ứng Travel là công ty du lịch và truyền thông được thành lập vào năm
-                                                2015 với đội ngũ
-                                                nhân viên dày kinh nghiệm trong lĩnh vực lữ hành, chúng tôi tự hào là
-                                                doanh nghiệp lữ hành hàng
-                                                đầu trong việc cung cấp dịch vụ du lịch và chăm sóc khách hàng&nbsp;
-                                            </p>
-                                            <p>&nbsp;</p>
-                                            <p>Bên cạnh việc cung cấp các tour trọn gói có sẵn, chúng tôi nhận thiết kế
-                                                các tour theo yêu cầu
-                                                của khách hàng. Với tiêu chí là ...
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-element">
-                                    <div
-                                        class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                        <a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-button-no-border"
-                                           href="#"
-                                           style="font-size: 17px ;font-weight: 600 ;color: #193555 ;padding-left: 0px;"><span
-                                                class="gdlr-core-content">Tìm hiểu thêm</span><i
-                                                class="gdlr-core-pos-right fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gdlr-core-pbf-column gdlr-core-column-30">
-                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js  gdlr-core-column-extend-right"
-                             style="margin: 0px 0px 0px 40px; padding: 640px 0px 0px; height: 721px;"
-                             data-sync-height="height1">
-                            <div class="gdlr-core-pbf-background-wrap">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
-                                     style="background-image: url(https://demo.goodlayers.com/traveltour/hiking/wp-content/uploads/2019/03/mountain-bg-2-2.jpg) ;background-repeat: no-repeat ;background-position: center left ;"
-                                     data-parallax-speed="0"></div>
-                            </div>
-                            <div
-                                class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Blogs -->
         <div class="gdlr-core-pbf-wrapper "
              style="padding: 95px 0px 50px 0px;">
@@ -423,7 +326,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Reference -->
         <div class="gdlr-core-pbf-wrapper "
