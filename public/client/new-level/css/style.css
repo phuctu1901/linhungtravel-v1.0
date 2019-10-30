@@ -1,0 +1,414 @@
+   /* Travel tour columns */
+
+
+
+   .traveltour-column-10 {
+       float: left;
+       width: 16.6666%
+   }
+
+   .traveltour-column-12 {
+       float: left;
+       width: 20%
+   }
+
+   .traveltour-column-15 {
+       float: left;
+       width: 25%
+   }
+
+   .traveltour-column-20 {
+       float: left;
+       width: 33.3333%
+   }
+
+   .traveltour-column-24 {
+       float: left;
+       width: 40%
+   }
+
+   .traveltour-column-30 {
+       float: left;
+       width: 50%
+   }
+
+   .traveltour-column-36 {
+       float: left;
+       width: 60%
+   }
+
+   .traveltour-column-40 {
+       float: left;
+       width: 66.6666%
+   }
+
+   .traveltour-column-45 {
+       float: left;
+       width: 75%
+   }
+
+   .traveltour-column-48 {
+       float: left;
+       width: 80%
+   }
+
+   .traveltour-column-50 {
+       float: left;
+       width: 83.3333%
+   }
+
+   .traveltour-column-60 {
+       float: left;
+       width: 100%
+   }
+
+   .gdlr-core-container,
+   .traveltour-container {
+       margin-left: auto;
+       margin-right: auto;
+       max-width: 1320px;
+   }
+
+
+   /* Travel tour item */
+   /* Travel tour item padding left right */
+   .traveltour-item-pdlr {
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+
+   /* Travel tour item reversepadding left right */
+   .traveltour-item-rvpdlr {
+       margin-left: -20px;
+       margin-right: -20px;
+   }
+
+
+
+   /* Footer */
+   .traveltour-footer-wrapper .traveltour-footer-container {
+       overflow: hidden
+   }
+
+   .traveltour-footer-wrapper {
+       padding-top: 70px;
+   }
+
+   .traveltour-copyright-container {
+       padding-top: 38px;
+   }
+
+   .traveltour-copyright-container {
+       padding: 38px 38px 0 0;
+   }
+
+   .traveltour-footer-wrapper .traveltour-widget-title {
+       font-size: 14px;
+       text-transform: uppercase;
+       letter-spacing: 1.5px;
+       margin-bottom: 35px
+   }
+
+
+
+   .traveltour-footer-wrapper .traveltour-widget-title .gdlr-core-flexslider-nav {
+       float: right;
+       margin-left: 20px
+   }
+
+   .traveltour-footer-wrapper .widget {
+       margin-bottom: 60px
+   }
+
+   .traveltour-footer-wrapper .widget:last-child {
+       margin-bottom: 0
+   }
+
+   .traveltour-footer-wrapper.traveltour-with-column-divider .traveltour-footer-column {
+       padding-bottom: 1029px;
+       margin-bottom: -1020px;
+       border-left: 1px;
+       border-style: solid;
+       border-color: inherit;
+       padding-left: 30px;
+       padding-right: 30px
+   }
+
+   .traveltour-footer-wrapper.traveltour-with-column-divider .traveltour-footer-column:first-child {
+       border: none
+   }
+
+   .traveltour-fixed-footer {
+       position: fixed;
+       left: 0;
+       right: 0;
+       bottom: 0
+   }
+
+   /* 
+   body.traveltour-boxed .traveltour-fixed-footer .traveltour-footer-wrapper,
+   body.traveltour-boxed .traveltour-fixed-footer .traveltour-copyright-wrapper {
+       margin-left: auto;
+       margin-right: auto
+   } */
+
+   .traveltour-footer-back-to-top-button {
+       position: fixed;
+       z-index: 9;
+       right: 30px;
+       bottom: 30px;
+       font-size: 18px;
+       line-height: 20px;
+       width: 45px;
+       height: 45px;
+       text-align: center;
+       padding: 12px;
+       cursor: pointer;
+       opacity: 0;
+       border-radius: 50%;
+       -moz-border-radius: 50%;
+       -webkit-border-radius: 50%;
+       pointer-events: none;
+       transition: opacity .3s;
+       -moz-transition: opacity .3s;
+       -o-transition: opacity .3s;
+       -webkit-transition: opacity .3s
+   }
+
+   /* 
+   .traveltour-footer-back-to-top-button.traveltour-scrolled {
+       opacity: 1;
+       pointer-events: auto
+   } */
+
+
+   .traveltour-copyright-wrapper.traveltour-transparent {
+       background: 0 0
+   }
+
+   .traveltour-copyright-container {
+       padding-top: 38px;
+       padding-bottom: 38px
+   }
+
+   .traveltour-copyright-text {
+       text-transform: none;
+       text-align: center;
+       font-size: 14px;
+       letter-spacing: 1px
+   }
+
+   .traveltour-copyright-left {
+       float: left;
+       font-size: 14px;
+       letter-spacing: 1px
+   }
+
+   .traveltour-copyright-right {
+       float: right;
+       font-size: 14px;
+       letter-spacing: 1px
+   }
+
+   .traveltour-copyright-divider {
+       border-top-width: 1px;
+       border-top-style: solid
+   }
+
+
+   /*  */
+   .traveltour-footer-wrapper .traveltour-widget-title {
+       color: #ffffff;
+       text-transform: uppercase;
+       font-size: 14px;
+       letter-spacing: 1.5px;
+   }
+
+   .traveltour-footer-wrapper {
+       border-color: #303030;
+   }
+
+
+   .traveltour-footer-wrapper {
+       color: #ababab;
+       background-color: #202020;
+
+   }
+
+   .traveltour-footer-wrapper * {
+       border-color: #303030;
+   }
+
+   .traveltour-footer-wrapper a {
+       color: #ffffff;
+       text-decoration: none;
+   }
+
+   span,
+   a {
+       border: 0;
+       border-top-color: currentcolor;
+       border-right-color: currentcolor;
+       border-bottom-color: currentcolor;
+       border-left-color: currentcolor;
+       outline: 0;
+       vertical-align: baseline;
+       background: 0 0;
+       margin: 0;
+       padding: 0;
+   }
+
+   .widget_nav_menu ul {
+       /* position: relative; */
+       /* list-style: none; */
+       /* margin-left: 0px; */
+       /* margin-bottom: 20px; */
+       border: 0;
+       outline: 0;
+       vertical-align: baseline;
+       background: 0 0;
+       margin: 0;
+       margin-bottom: 0px;
+       margin-left: 0px;
+       padding: 0;
+   }
+
+   .widget_nav_menu ul li {
+       font-size: 14px;
+
+       margin-bottom: 13px;
+
+       padding-left: 0;
+
+       margin-top: 13px;
+
+       line-height: 20px;
+
+       padding-bottom: 15px;
+
+       border-bottom-width: 1px;
+
+       border-bottom-style: solid;
+   }
+
+
+   .traveltour-body {
+       font-size: 15px;
+       font-family: "Poppins", sans-serif;
+   }
+
+   body {
+       word-wrap: break-word;
+       word-break: break-word;
+   }
+
+   ul {
+       list-style: none;
+   }
+
+
+   .traveltour-widget-head-text {
+       font-family: "Oswald", sans-serif;
+   }
+
+
+   .traveltour-copyright-wrapper {
+       background-color: #181818;
+   }
+
+   .traveltour-copyright-wrapper {
+       color: #838383;
+   }
+
+
+   @media only screen and (max-width:767px) {
+
+
+       .traveltour-column-10,
+       .traveltour-column-12,
+       .traveltour-column-15,
+       .traveltour-column-20,
+       .traveltour-column-24,
+       .traveltour-column-30,
+       .traveltour-column-36,
+       .traveltour-column-40,
+       .traveltour-column-45,
+       .traveltour-column-48,
+       .traveltour-column-50,
+       .traveltour-column-60 {
+           width: 100%
+       }
+
+       .widget_nav_menu ul {
+           padding: 0 0 0 10%;
+
+       }
+
+
+       .traveltour-footer-wrapper.traveltour-with-column-divider .traveltour-footer-column {
+           padding: 0 15px;
+           margin-bottom: 60px;
+           border: none
+       }
+
+       .traveltour-footer-wrapper.traveltour-with-column-divider .traveltour-footer-column:last-child {
+           margin-bottom: 20px
+       }
+
+       .traveltour-fixed-footer-placeholder {
+           display: none
+       }
+
+       .traveltour-fixed-footer {
+           position: static
+       }
+
+       .traveltour-copyright-left,
+       .traveltour-copyright-right {
+           float: none;
+           text-align: center
+       }
+
+   }
+
+   .gdlr-core-testimonial-author-image.gdlr-core-media-image img {
+       max-width: 100%;
+       height: auto;
+   }
+
+   .gdlr-core-testimonial-item.gdlr-core-testimonial-position.gdlr-core-rating {
+       display: block;
+   }
+
+
+   .tourmaster-media-image img {
+       max-width: 100%;
+       height: auto;
+   }
+
+
+   .gdlr-core-blog-modern-content.gdlr-core-center-align {
+       position: relative;
+
+       left: 0;
+
+       right: 0;
+
+       bottom: 100px;
+
+       padding: 0 45px 15px 60px;
+
+       z-index: 2;
+       background: url(//cdn.goodlayers.com/traveltour/wp-content/plugins/tourmaster/images/tour-category-item-gradient.png) bottom repeat-x;
+   }
+
+   .gdlr-core-blog-modern-content.gdlr-core-center-align{
+padding-top: 20px;
+}
+
+   .gdlr-core-blog-modern-content.gdlr-core-center-align a{
+    color: #ffffff;
+   }
+   .icon_clock_alt{
+       color: #ffffff;
+   }
