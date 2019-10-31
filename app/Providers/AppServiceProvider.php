@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Footer;
+use App\Info;
 use App\Page;
 use App\PostCategory;
 use App\Slider;
@@ -34,9 +35,10 @@ class AppServiceProvider extends ServiceProvider
         $tour_categories=TourCategory::all('id', 'title', 'parent_id','slug','count');
         $tour_parents=TourCategoryParent::all('id', 'title');
         $post_categories=PostCategory::all();
-        $footer=Footer::all()->first();
         $config=WebConfig::all()->first();
         $pages=Page::where('isActive',1)->get();
-        view()->share(['tour_categories'=>$tour_categories, 'tour_parents'=>$tour_parents, 'sliders'=>$sliders,'footer'=>$footer,'post_categories'=>$post_categories,'config'=>$config,'menu_pages'=>$pages]);
+        $footer=Footer::all();
+        $info=Info::all()->first();
+        view()->share(['tour_categories'=>$tour_categories, 'tour_parents'=>$tour_parents, 'sliders'=>$sliders,'footer'=>$footer,'post_categories'=>$post_categories,'config'=>$config,'menu_pages'=>$pages,'info'=>$info]);
     }
 }

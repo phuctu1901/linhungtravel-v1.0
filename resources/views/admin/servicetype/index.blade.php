@@ -30,9 +30,9 @@
                         @endif
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title" style="display:inline-block;">DANH SÁCH DỊCH VỤ</h4>
+                                <h4 class="card-title" style="display:inline-block;">DANH SÁCH DANH MỤC DỊCH VỤ</h4>
                                 <a type="button" name="add" id="add" class="btn btn-success pull-right"
-                                        style="display: inline-block" href="/admin/service/add">Thêm dịch vụ
+                                        style="display: inline-block" href="/admin/servicetype/add">Thêm danh mục dịch vụ
                                 </a>
                             </div>
                             <div class="card-body">
@@ -41,28 +41,18 @@
                                         <thead>
                                         <tr>
                                             <th>Tên</th>
-                                            <th>Slug</th>
-                                            <th>Giá bán</th>
-                                            <th>Trạng thái</th>
-                                            <th>Hành động</th>
+                                            <th>Sửa</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($services as  $service)
+                                        @foreach($servicetypes as  $servicetype)
                                             <tr>
 
-                                                <td>{{$service->title}}</td>
-                                                <td>{{$service->slug}}</td>
-                                                <td>{{$service->giasaukhigiam}}</td>
-                                                <td>{{$service->isActive}}</td>
+                                                <td>{{$servicetype->title}}</td>
                                                 <td>
-                                                    <a class="success p-0" data-original-title="" title=""
-                                                       href="/admin/service/edit/{{$service->id}}">
-                                                        <i class="ft-edit-2 font-medium-3 mr-2"></i>
-                                                    </a>
                                                     <a class="danger p-0" data-original-title="" title=""
-                                                       href="/admin/service/delete/{{$service->id}}">
-                                                        <i class="ft-x font-medium-3 mr-2"></i>
+                                                       href="/admin/servicetype/edit/{{$servicetype->id}}">
+                                                        <i class="ft-edit font-medium-3 mr-2"></i>
                                                     </a>
                                                 </td>
                                             </tr>

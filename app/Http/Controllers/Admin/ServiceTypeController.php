@@ -2,29 +2,29 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Footer;
 use Session;
+use App\Service;
+use App\ServiceType;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class FooterController extends Controller
+class ServiceTypeController extends Controller
 {
     //
     public  function index(){
-        $footers = Footer::all();
-        return view('admin.footer.index', ['footers' => $footers]);
+        $servicetypes = ServiceType::all();
+        return view('admin.servicetype.index', ['servicetypes'=>$servicetypes]);
     }
-
+//
     public function addview()
     {
-        return view('admin.footer.add');
+        return view('admin.servicetype.add');
     }
 
     protected function create(array $data)
     {
-        return Footer::create([
+        return ServiceType::create([
             'title' => $data['title'],
-            'pnumber' => $data['pnumber']
         ]);
     }
 
@@ -33,19 +33,19 @@ class FooterController extends Controller
         $allRequest = $request->all();
         if ($this->create($allRequest)) {
             // Insert thành công sẽ hiển thị thông báo
-            Session::flash('success', 'Thêm danh mục liên hệ ở footer thành công!');
-            return redirect('/admin/footer');
+            Session::flash('success', 'Thêm danh mục dịch vụ thành công!');
+            return redirect('/admin/servicetype');
         } else {
             // Insert thất bại sẽ hiển thị thông báo lỗi
-            Session::flash('error', 'Lỗi, thêm  danh mục liên hệ ở footer thất bại!');
-            return redirect('/admin/footer/add');
+            Session::flash('error', 'Lỗi, thêm danh mục dịch vụ thất bại!');
+            return redirect('/admin/servicetype/add');
         }
     }
 
-    public function editView($footer_id)
+    public function editView($servicetype_id)
     {
-        $footer= Footer::find($footer_id);
-        return view('admin.footer.edit', ['footer'=>$footer]);
+        $servicetype= ServiceType::find($servicetype_id);
+        return view('admin.servicetype.edit', ['servicetype'=>$servicetype]);
     }
 
     public function editRequest(Request $request)
@@ -54,15 +54,14 @@ class FooterController extends Controller
 //        'title' => $data['title'],
 //            'giasaukhigiam' => $data['giasaukhigiam'],
 //            'giagoc' => $data['giagoc'],
-//            'footer_id' => $data['parent_id'],
+//            'servicetype_id' => $data['parent_id'],
 //            'isActive'=> (int) $data['isActive'],
 //            'isPr'=>1,
 //            'content'=>json_encode($data['content']),
 //            'thumb'=>$data['thumb_data']
         $id = $request->id;
-        $footer= Footer::find($id);
-        $footer->title=$request->title;
-        $footer->pnumber=$request->pnumber;
+        $servicetype= ServiceType::find($id);
+        $servicetype->title=$request->title;
 
 
 //        $service->metaTitle=$request->meta_title;
@@ -71,15 +70,7 @@ class FooterController extends Controller
 
 
 
-        $footer->save();
-        return redirect('/admin/footer');
+        $servicetype->save();
+        return redirect('/admin/servicetype');
     }
-
-    public function delete($footer_id)
-    {
-        $footer= Footer::find($footer_id);
-        $footer->delete();
-        return redirect()->back()->with('delete_success', 'Đã xóa dịch vụ thành công!');
-    }
-
 }

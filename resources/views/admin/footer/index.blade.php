@@ -2,125 +2,79 @@
 
 @section('main-content')
 
-
     <div class="main-content">
-        <div class="content-wrapper">
-            <!-- Basic form layout section start -->
-            <section id="horizontal-form-layouts">
+        <div class="content-wrapper"><!--Extended Table starts-->
+
+            <section id="extended">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
+                        <?php //Hiển thị thông báo thành công?>
+                        @if ( Session::has('success') )
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <strong>{{ Session::get('success') }}</strong>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                        @endif
+                        <?php //Hiển thị thông báo thành công?>
+                        @if ( Session::has('delete_success') )
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <strong>{{ Session::get('delete_success') }}</strong>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                        @endif
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title" id="horz-layout-basic">Footer của website</h4>
+                                <h4 class="card-title" style="display:inline-block;">DANH SÁCH LIÊN HỆ Ở FOOTER</h4>
+                                <a type="button" name="add" id="add" class="btn btn-success pull-right"
+                                        style="display: inline-block" href="/admin/footer/add">Thêm liên hệ
+                                </a>
                             </div>
                             <div class="card-body">
-                                <div class="px-3">
+                                <div class="card-block">
+                                    <table class="table table-responsive-md-md text-center">
+                                        <thead>
+                                        <tr>
+                                            <th>Tên</th>
+                                            <th>Số điện thoại</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($footers as  $footer)
+                                            <tr>
 
-                                    <form class="form form-horizontal"
-                                          action="{{url('/admin/footer/update')}} "
-                                          method="POST" role="form" enctype="multipart/form-data">
-                                        {{ csrf_field()}}
-                                        <div class="form-body">
-                                            <input type="hidden" id="id" name="id" value="{{$footer->id}}">
-                                            <h4 class="form-section"><i class="ft-edit-3"></i> Nội dung footer:</h4>
-                                            <div class="form-group row">
-                                                <div class="col-md-12">
-                                                            <textarea id="web_footer" rows="15" class="form-control"
-                                                                      name="web_footer"><?php echo json_decode($footer->content);?></textarea>
+                                                <td>{{$footer->title}}</td>
+                                                <td>{{$footer->pnumber}}</td>
+                                                <td>
 
-                                                    <script
-                                                        src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
-                                                    <script>
-                                                        CKEDITOR.plugins.addExternal( 'justify', '/asset-admin/js/justify/', 'plugin.js' );
-                                                        var options = {
-                                                            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-                                                            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
-                                                            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-                                                            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token=',
-                                                            extraPlugins: 'justify'
-                                                        };
-                                                        CKEDITOR.replace('web_footer', options);
+                                                    <a class="danger p-0" data-original-title="" title=""
+                                                       href="/admin/footer/edit/{{$footer->id}}">
+                                                        <i class="ft-edit font-medium-3 mr-2"></i>
+                                                    </a>
+                                                    <a class="danger p-0" data-original-title="" title=""
+                                                       href="/admin/footer/delete/{{$footer->id}}">
+                                                        <i class="ft-x font-medium-3 mr-2"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
 
-                                                    </script>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="form-actions">
-                                            <button type="button" class="btn btn-raised btn-warning mr-1">
-                                                <i class="ft-x"></i> Reset
-                                            </button>
-                                            <button type="submit" class="btn btn-raised btn-primary">
-                                                <i class="fa fa-check-square-o"></i> Save
-                                            </button>
-                                        </div>
-                                    </form>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- // Basic form layout section end -->
-
+            <!--Extended Table Ends-->
         </div>
     </div>
-    <script>
-        var msg = '{{Session::get('
-    alert ')}}';
-        var exist = '{{Session::has('
-    alert ')}}';
-        if (exist) {
-            alert(msg);
-        }
-    </script>
 
-    <script type='text/javascript' src='/client/asset/js/jquery.js'></script>
-    <script type='text/javascript' src='/client/asset/js/jquery-migrate.min.js'></script>
-    <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
-
-
-    <script>
-
-
-        jQuery(function ($) {
-            var options = {
-                filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-                filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
-                filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-                filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
-            };
-
-
-        });
-    </script>
-    <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
-    <script>
-
-        jQuery(function ($) {
-
-            const options = {
-                filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-                filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
-                filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-                filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
-            };
-
-
-            $('#category_thumb').filemanager('image');
-
-
-            $(document).ready(function () {
-                $('#category_thumb_data').change(function () {
-                    var data = $(this).val();
-                    $("#category_thumb_preview").attr("src", data);
-                    console.log(data)
-                });
-
-
-            });
-        });
-    </script>
 @endsection

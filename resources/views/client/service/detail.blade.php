@@ -208,6 +208,9 @@
 
 @section("custom-style-content")
     <style>
+        .service-price{
+            font-family: sans-serif;
+        }
 
         .tourmaster-media-image img{
             width: 760px;

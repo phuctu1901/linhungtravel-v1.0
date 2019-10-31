@@ -4,10 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Review extends Model
+class Car extends Model
 {
-    protected $table = 'reviews';
+    protected $table = 'cars';
     public $timestamps = false;
+    public  $incrementing = true;
     protected $primaryKey = 'id'; // or null
-    protected $fillable = ['author', 'content', 'job', 'avatar'];
+    public  $fillable=['quytrinh', 'lienhe','phuluc'];
 }

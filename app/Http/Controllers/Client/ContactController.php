@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Client;
-
+use Session;
+use App\ContactForm;
 use App\Http\Controllers\Controller;
 use App\Info;
 use Illuminate\Http\Request;
@@ -18,11 +19,23 @@ class ContactController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255',
-            'message' => 'required|string|max:255',
+            'phone' => 'required|string|max:20',
+            'message' => 'required|string|max:2000',
             'g-recaptcha-response' => ['required', new \App\Rules\ValidRecaptcha]
         ]);
     }
+
+    protected function create(array $data)
+    {
+        return ContactForm::create([
+            'name' => $data['name'],
+            'title' => $data['title'],
+            'email' => $data['email'],
+            'phone' => $data['phone'],
+            'content'=>json_encode($data['message']),
+        ]);
+    }
+
 
     public function addrequest(Request $request) {
         // Kiểm tra dữ liệu vào
@@ -36,12 +49,12 @@ class ContactController extends Controller
             // Dữ liệu vào hợp lệ sẽ thực hiện tạo người dùng dưới csdl
             if( $this->create($allRequest)) {
                 // Insert thành công sẽ hiển thị thông báo
-                Session::flash('success', 'Đăng ký thành viên thành công!');
-                return redirect('admin');
+                Session::flash('success', 'Đã gởi tin yêu cầu, chúng tôi sẽ sớm hỗ trợ bạn');
+                return redirect('/lien-he');
             } else {
                 // Insert thất bại sẽ hiển thị thông báo lỗi
                 Session::flash('error', 'Đăng ký thành viên thất bại!');
-                return redirect('admin/register');
+                return redirect('/lien-he');
             }
         }
     }

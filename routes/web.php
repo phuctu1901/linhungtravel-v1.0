@@ -60,8 +60,12 @@ Route::group(['prefix'=>'/admin',  'middleware' => 'auth'],function(){
     Route::get('/slider/delete/{slider_id}', 'Admin\SliderController@delete');
     Route::get('/slider/detail/{slider_id}','Admin\SliderController@detail');
 
-    Route::get('/footer', 'Admin\FooterController@getAll');
-    Route::post('/footer/update', 'Admin\FooterController@update');
+    Route::get('/footer', 'Admin\FooterController@index');
+    Route::get('/footer/edit/{id}', 'Admin\FooterController@editView');
+    Route::post('/footer/editRequest','Admin\FooterController@editRequest');
+    Route::get('/footer/add', 'Admin\FooterController@addView');
+    Route::post('/footer/addRequest','Admin\FooterController@addRequest');
+    Route::get('/footer/delete/{id}', 'Admin\FooterController@delete');
 
 
     Route::get('/page', 'Admin\PageController@getAll');
@@ -102,12 +106,34 @@ Route::group(['prefix'=>'/admin',  'middleware' => 'auth'],function(){
     Route::get('/service', 'Admin\ServiceController@index');
     Route::get('/service/add', 'Admin\ServiceController@addView');
     Route::post('/service/addRequest','Admin\ServiceController@addRequest');
-    Route::get('/service/detail/{service_id}', 'Admin\ServiceController@detail');
+    Route::get('/service/edit/{service_id}', 'Admin\ServiceController@editView');
+    Route::post('/service/editRequest','Admin\ServiceController@editRequest');
+//    Route::get('/service/detail/{service_id}', 'Admin\ServiceController@detail');
     Route::get('/service/delete/{service_id}', 'Admin\ServiceController@delete');
 
 
+    Route::get('/servicetype', 'Admin\ServiceTypeController@index');
+    Route::get('/servicetype/add', 'Admin\ServiceTypeController@addView');
+    Route::post('/servicetype/addRequest','Admin\ServiceTypeController@addRequest');
+    Route::get('/servicetype/edit/{service_id}', 'Admin\ServiceTypeController@editView');
+    Route::post('/servicetype/editRequest','Admin\ServiceTypeController@editRequest');
 
 
+    Route::get('/review', 'Admin\ReviewController@index');
+    Route::get('/review/edit/{id}', 'Admin\ReviewController@editView');
+    Route::post('/review/editRequest','Admin\ReviewController@editRequest');
+    Route::get('/review/add', 'Admin\ReviewController@addView');
+    Route::post('/review/addRequest','Admin\ReviewController@addRequest');
+    Route::get('/review/delete/{id}', 'Admin\ReviewController@delete');
+
+
+    Route::get('/request/done', 'Admin\RequestController@done');
+    Route::get('/request/do', 'Admin\RequestController@do');
+    Route::get('/request/edit/{service_id}', 'Admin\RequestController@editView');
+    Route::post('/request/editRequest','Admin\RequestController@editRequest');
+
+    Route::get('/car', 'Admin\CarController@index');
+    Route::post('/car/update', 'Admin\CarController@update');
 
 
     Route::get('/', 'Admin\DashboardController@index');
@@ -131,6 +157,10 @@ Route::group(['prefix'=>'/admin',  'middleware' => 'auth'],function(){
     Route::post('/changePassword','Admin\UserController@changePassword');
     //các route khác
 });
+
+
+
+
 Route::get('/', 'Client\HomeController@index');
 
 

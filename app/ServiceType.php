@@ -8,7 +8,7 @@ class ServiceType extends Model
 {
 
     protected $table = 'servicetypes';
-    public $timestamps = true;
+    public $timestamps = false;
     protected $primaryKey = 'id'; // or null
     protected $fillable = ['title'];
 }

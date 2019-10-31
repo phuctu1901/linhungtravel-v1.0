@@ -2,10 +2,20 @@
 @extends('client.layouts.master')
 @section('header', 'default_header')
 @section('head-content')
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    @endsection
+    <script src="/client/new-level/plugins/sweetalert2.min.js" async defer></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <<link rel="stylesheet" type="text/css" href="/client/new-level/plugins/sweetalert2.min.css">
+@endsection
 
 @section('main-content')
+        <?php //Hiển thị thông báo thành công?>
+        @if ( Session::has('success') )
+            <script>
+                swal("Thành công!", "Yêu cầu của bạn đã gởi tới hệ thống", "success");
+            </script>
+        @endif
     <div id="st-content-wrapper" class="search-result-page">
         <div class="st_background">
             <div class="st_background" style="padding: 200px 0; position: relative;">
@@ -153,7 +163,7 @@
                                                         </div>
                                                         <div class="form-group">
                                                         <input type="tel"
-                                                               name="tel"
+                                                               name="phone"
                                                                value=""
                                                                size="40"
                                                                class="form-control"
@@ -241,82 +251,21 @@
             <div class="vc_row-full-width vc_clearfix"></div>
         </div>
     </div>
-    <style>
-        .st_background {
-            background-image: url(https://www.saigontourist.net/uploads/destination/cover-tour-tag/tour-tag-he2019-giam20tr.jpg) !important;
-        }
-    </style>
 @endsection
 @section('script-content')
-{{--    <script>--}}
-{{--        window.onload = function() {--}}
-{{--            var $recaptcha = document.querySelector('#g-recaptcha-response');--}}
 
-{{--            if($recaptcha) {--}}
-{{--                $recaptcha.setAttribute("required", "required");--}}
-{{--            }--}}
-{{--        };--}}
-{{--    </script>--}}
-<script>
-    if ($("#contact-form").length > 0) {
-        $("#contact-form").validate({
+    <script>
+        window.onload = function() {
+            var $recaptcha = document.querySelector('#g-recaptcha-response');
 
-            rules: {
-                name: {
-                    required: true,
-                    maxlength: 255
-                },
-
-                email: {
-                    required: true,
-                    email: true,
-                },
-                message:{
-                    required:true,
-                }
-
-            },
-            messages: {
-                name: {
-                    required: "Vui lòng điền đên",
-                    maxlength: "Tên của bạn nhập quá dài"
-                },
-                email: {
-                    required: "Vui lòng nhập email",
-                    email: "Vui lòng nhập địa chỉ email",
-                },
-                message: {
-                    required: "Vui lòng nhập nội dung",
-                },
-
-            },
-            submitHandler: function(form) {
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-                // $('#send_form').html('Sending..');
-                $.ajax({
-                    url: 'http://localhost/laravel-example/save-form' ,
-                    type: "POST",
-                    data: $('#contact_us').serialize(),
-                    success: function( response ) {
-                        $('#send_form').html('Submit');
-                        $('#res_message').show();
-                        $('#res_message').html(response.msg);
-                        $('#msg_div').removeClass('d-none');
-
-                        document.getElementById("contact_us").reset();
-                        setTimeout(function(){
-                            $('#res_message').hide();
-                            $('#msg_div').hide();
-                        },10000);
-                    }
-                });
+            if($recaptcha) {
+                $recaptcha.setAttribute("required", "required");
             }
-        })
-    }
-</script>
+        };
+
+    </script>
+
+
+
 @endsection
 

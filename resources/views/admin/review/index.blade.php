@@ -30,9 +30,9 @@
                         @endif
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title" style="display:inline-block;">DANH SÁCH DỊCH VỤ</h4>
+                                <h4 class="card-title" style="display:inline-block;">CÁC BÌNH LUẬN</h4>
                                 <a type="button" name="add" id="add" class="btn btn-success pull-right"
-                                        style="display: inline-block" href="/admin/service/add">Thêm dịch vụ
+                                        style="display: inline-block" href="/admin/review/add">Thêm bình luận
                                 </a>
                             </div>
                             <div class="card-body">
@@ -40,28 +40,35 @@
                                     <table class="table table-responsive-md-md text-center">
                                         <thead>
                                         <tr>
-                                            <th>Tên</th>
-                                            <th>Slug</th>
-                                            <th>Giá bán</th>
-                                            <th>Trạng thái</th>
-                                            <th>Hành động</th>
+                                            <th>Tác giả</th>
+                                            <th>Nội dung</th>
+                                            <th>Công việc</th>
+                                            <th>Ảnh đại diện</th>
+                                            <th>Actions</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($services as  $service)
+                                        @foreach($reviews as  $review)
                                             <tr>
+                                                {{--<td>--}}
+                                                {{--<div class="custom-control custom-checkbox m-0">--}}
+                                                {{--<input type="checkbox" class="custom-control-input" id="item1">--}}
+                                                {{--<label class="custom-control-label" for="item1"></label>--}}
+                                                {{--</div>--}}
+                                                {{--</td>--}}
+                                                <td>{{$review->author}}</td>
+                                                <td>{{$review->content}}</td>
+                                                <td>{{$review->job}}</td>
+                                                <td><img style="draggable:false;width:50px;height:50px;-webkit-border-radius: 50%;" src="{{$review->avatar}}"></td>
 
-                                                <td>{{$service->title}}</td>
-                                                <td>{{$service->slug}}</td>
-                                                <td>{{$service->giasaukhigiam}}</td>
-                                                <td>{{$service->isActive}}</td>
+
                                                 <td>
                                                     <a class="success p-0" data-original-title="" title=""
-                                                       href="/admin/service/edit/{{$service->id}}">
+                                                       href="/admin/review/edit/{{$review->id}}">
                                                         <i class="ft-edit-2 font-medium-3 mr-2"></i>
                                                     </a>
                                                     <a class="danger p-0" data-original-title="" title=""
-                                                       href="/admin/service/delete/{{$service->id}}">
+                                                       href="/admin/review/delete/{{$review->id}}">
                                                         <i class="ft-x font-medium-3 mr-2"></i>
                                                     </a>
                                                 </td>

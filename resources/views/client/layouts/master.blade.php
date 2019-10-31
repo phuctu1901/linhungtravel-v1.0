@@ -204,37 +204,17 @@
                         class="clear"></span>
                     <div
                         class="textwidget">
+                        @foreach($footer as $f)
+
                         <div
                             style="margin-bottom: 7px;">
                                                                                                                                         <span
-                                                                                                                                            style="color: #8aa5e8;">Dịch
-                                                                                                                                            vụ
-                                                                                                                                            tour</span><i
+                                                                                                                                            style="color: #8aa5e8;">{{$f->title}}</span><i
                                 class="fa fa-phone"
                                 style="font-size: 15px ;color: #ffffff ;margin-left: 20px ;margin-right: 10px ;"></i><span
-                                style="color: #ffffff;">+6-345-3456-233</span>
+                                style="color: #ffffff;">{{$f->pnumber}}</span>
                         </div>
-                        <div
-                            style="margin-bottom: 7px;">
-                                                                                                                                        <span
-                                                                                                                                            style="color: #8aa5e8;">Dịch
-                                                                                                                                            vụ
-                                                                                                                                            khách
-                                                                                                                                            sạn</span><i
-                                class="fa fa-phone"
-                                style="font-size: 15px ;color: #ffffff ;margin-left: 20px ;margin-right: 10px ;"></i><span
-                                style="color: #ffffff;">+1-345-33454-4</span>
-                        </div>
-                        <div
-                            style="margin-bottom: 23px;">
-                                                                                                                                        <span
-                                                                                                                                            style="color: #8aa5e8;">Dịch
-                                                                                                                                            vụ
-                                                                                                                                            xe</span><i
-                                class="fa fa-phone"
-                                style="font-size: 15px ;color: #ffffff ;margin-left: 20px ;margin-right: 10px ;"></i><span
-                                style="color: #ffffff;">+34-8757-4556</span>
-                        </div>
+                        @endforeach
 
                     </div>
                 </div>
@@ -337,23 +317,13 @@
                         style="margin-bottom: 23px;">
                         <i class="fa fa-map-marker"
                            style="font-size: 15px ;color: #ffffff ;margin-right: 10px ;"></i><span
-                            style="color: #ffffff;">528
-                                                                                                                                            Trưng
-                                                                                                                                            Nữ
-                                                                                                                                            Vương,
-                                                                                                                                            Hòa
-                                                                                                                                            Thuận
-                                                                                                                                            Nam,
-                                                                                                                                            Hải
-                                                                                                                                            Châu,
-                                                                                                                                            Đà
-                                                                                                                                            Nẵng</span>
+                            style="color: #ffffff;">{{$info->address}}</span>
                     </div>
                     <div
                         style="margin-bottom: 23px;">
                         <i class="fa fa-envelope-open-o"
                            style="font-size: 15px ;color: #ffffff ;margin-right: 10px ;"></i><span
-                            style="color: #ffffff;">cskh@linhungtravel.com</span>
+                            style="color: #ffffff;">{{$info->email}}</span>
                     </div>
 
 {{--                    <p>© 2020--}}
