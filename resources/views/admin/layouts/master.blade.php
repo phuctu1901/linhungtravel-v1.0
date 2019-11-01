@@ -146,8 +146,6 @@
                             </li>
                             <li><a href="/admin/seocode" class="menu-item">SEO CODE</a>
                             </li>
-                            <li><a href="/admin/footer" class="menu-item">Footer</a>
-                            </li>
                         </ul>
                     </li>
 
@@ -179,7 +177,7 @@
                         <ul class="menu-content">
                             <li><a href="/admin/info" class="menu-item">Thông tin công ty</a>
                             </li>
-                            <li><a href="/admin/contact" class="menu-item">Liên hệ</a>
+                            <li><a href="/admin/footer" class="menu-item">Liên hệ</a>
                             </li>
                         </ul>
                     </li>

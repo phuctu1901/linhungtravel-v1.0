@@ -145,7 +145,7 @@
        bottom: 0
    }
 
-   /* 
+   /*
    body.traveltour-boxed .traveltour-fixed-footer .traveltour-footer-wrapper,
    body.traveltour-boxed .traveltour-fixed-footer .traveltour-copyright-wrapper {
        margin-left: auto;
@@ -175,7 +175,7 @@
        -webkit-transition: opacity .3s
    }
 
-   /* 
+   /*
    .traveltour-footer-back-to-top-button.traveltour-scrolled {
        opacity: 1;
        pointer-events: auto
@@ -411,4 +411,8 @@ padding-top: 20px;
    }
    .icon_clock_alt{
        color: #ffffff;
+   }
+
+   .tourmaster-tour-discount-price{
+        font-family: sans-serif!important;
    }

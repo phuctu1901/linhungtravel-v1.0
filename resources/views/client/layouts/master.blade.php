@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, maximum-scale=2, minimum-scale=1">
-    <title>Linh Ứng Travel &#8211; Công ty du lịch và truyền thông Linh Ứng - @yield('title')</title>
+    <title> {{$config->metaTitle}}- @yield('title')</title>
     <meta name='robots' content='noindex,follow'/>
 
 

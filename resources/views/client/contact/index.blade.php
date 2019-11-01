@@ -6,16 +6,11 @@
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <<link rel="stylesheet" type="text/css" href="/client/new-level/plugins/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="/client/new-level/plugins/sweetalert2.min.css">
 @endsection
 
 @section('main-content')
-        <?php //Hiển thị thông báo thành công?>
-        @if ( Session::has('success') )
-            <script>
-                swal("Thành công!", "Yêu cầu của bạn đã gởi tới hệ thống", "success");
-            </script>
-        @endif
+
     <div id="st-content-wrapper" class="search-result-page">
         <div class="st_background">
             <div class="st_background" style="padding: 200px 0; position: relative;">
@@ -251,6 +246,12 @@
             <div class="vc_row-full-width vc_clearfix"></div>
         </div>
     </div>
+    <?php //Hiển thị thông báo thành công?>
+    @if ( Session::has('success') )
+        <script>
+            swal("Thành công!", "Yêu cầu của bạn đã gởi tới hệ thống", "success");
+        </script>
+    @endif
 @endsection
 @section('script-content')
 
